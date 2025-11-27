@@ -30,7 +30,7 @@ jobs:
           pytest
 
   docker-build:
-    needs: tests
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
